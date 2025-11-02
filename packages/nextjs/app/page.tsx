@@ -17,12 +17,12 @@ const Home: NextPage = () => {
       <Section title="quick access" subtitle="get to the ecosystem's features">
         <QuickAccess
           items={[
-            { key: "lock", label: "lock", icon: <LockClosedIcon className="size-10 text-secondary" /> },
-            { key: "fund", label: "fund", icon: <BanknotesIcon className="size-10 text-secondary" /> },
-            { key: "projects", label: "projects", icon: <FolderIcon className="size-10 text-secondary" /> },
-            { key: "people", label: "people", icon: <UsersIcon className="size-10 text-secondary" /> },
-            { key: "chat", label: "chat", icon: <ChatBubbleLeftRightIcon className="size-10 text-secondary" /> },
-            { key: "profile", label: "profile", icon: <UserIcon className="size-10 text-secondary" /> },
+            { key: "lock", label: "lock", icon: <LockClosedIcon className="size-10 text-secondary" />, href: "/lock" },
+            { key: "fund", label: "fund", icon: <BanknotesIcon className="size-10 text-secondary" />, href: "/fund" },
+            { key: "projects", label: "projects", icon: <FolderIcon className="size-10 text-secondary" />, href: "/projects" },
+            { key: "people", label: "people", icon: <UsersIcon className="size-10 text-secondary" />, href: "/people" },
+            { key: "chat", label: "chat", icon: <ChatBubbleLeftRightIcon className="size-10 text-secondary" />, href: "/chat" },
+            { key: "profile", label: "profile", icon: <UserIcon className="size-10 text-secondary" />, href: "/profile" },
           ] as QuickAccessItem[]}
         />
       </Section>
