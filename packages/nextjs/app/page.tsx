@@ -1,19 +1,32 @@
 "use client";
 
 import type { NextPage } from "next";
-import { useAccount } from "wagmi";
 import { Section } from "../components/Section";
 import { FeaturedProject } from "../components/dashboard/FeaturedProject";
+import { QuickAccess, type QuickAccessItem } from "../components/dashboard/QuickAccess";
+import { BanknotesIcon, ChatBubbleLeftRightIcon, FolderIcon, LockClosedIcon, UserIcon, UsersIcon } from "@heroicons/react/20/solid";
 
 const Home: NextPage = () => {
-  const { address: connectedAddress } = useAccount();
-
   return (
     <>
       <section>
         <h1 className="text-5xl font-bold">hello, stranger</h1>
         <p className="text-lg">turn your ideas into reality by receiving the funding you need</p>
       </section>
+
+      <Section title="quick access" subtitle="get to the ecosystem's features">
+        <QuickAccess
+          items={[
+            { key: "lock", label: "lock", icon: <LockClosedIcon className="size-10" /> },
+            { key: "fund", label: "fund", icon: <BanknotesIcon className="size-10" /> },
+            { key: "projects", label: "projects", icon: <FolderIcon className="size-10" /> },
+            { key: "people", label: "people", icon: <UsersIcon className="size-10" /> },
+            { key: "chat", label: "chat", icon: <ChatBubbleLeftRightIcon className="size-10" /> },
+            { key: "profile", label: "profile", icon: <UserIcon className="size-10" /> },
+          ] as QuickAccessItem[]}
+        />
+      </Section>
+
       <Section title="stats" subtitle="new beginning, new opportunities">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
           <div className="bg-zinc-800 rounded-md py-12 text-center border border-zinc-700 duration-300">
