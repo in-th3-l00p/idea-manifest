@@ -17,12 +17,12 @@ const Home: NextPage = () => {
       <Section title="quick access" subtitle="get to the ecosystem's features">
         <QuickAccess
           items={[
-            { key: "lock", label: "lock", icon: <LockClosedIcon className="size-10" /> },
-            { key: "fund", label: "fund", icon: <BanknotesIcon className="size-10" /> },
-            { key: "projects", label: "projects", icon: <FolderIcon className="size-10" /> },
-            { key: "people", label: "people", icon: <UsersIcon className="size-10" /> },
-            { key: "chat", label: "chat", icon: <ChatBubbleLeftRightIcon className="size-10" /> },
-            { key: "profile", label: "profile", icon: <UserIcon className="size-10" /> },
+            { key: "lock", label: "lock", icon: <LockClosedIcon className="size-10 text-secondary" /> },
+            { key: "fund", label: "fund", icon: <BanknotesIcon className="size-10 text-secondary" /> },
+            { key: "projects", label: "projects", icon: <FolderIcon className="size-10 text-secondary" /> },
+            { key: "people", label: "people", icon: <UsersIcon className="size-10 text-secondary" /> },
+            { key: "chat", label: "chat", icon: <ChatBubbleLeftRightIcon className="size-10 text-secondary" /> },
+            { key: "profile", label: "profile", icon: <UserIcon className="size-10 text-secondary" /> },
           ] as QuickAccessItem[]}
         />
       </Section>
@@ -31,17 +31,17 @@ const Home: NextPage = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
           <div className="bg-zinc-800 rounded-md py-12 text-center border border-zinc-700 duration-300">
             <div className="text-sm">locked in:</div>
-            <div className="text-3xl font-bold">0 ETH</div>
+            <div className="text-3xl font-bold text-secondary">0 GLM</div>
           </div>
 
           <div className="bg-zinc-800 rounded-md py-12 text-center border border-zinc-700 duration-300">
             <div className="text-sm">funded:</div>
-            <div className="text-3xl font-bold">0 ETH</div>
+            <div className="text-3xl font-bold text-secondary">0 GLM</div>
           </div>
 
           <div className="bg-zinc-800 rounded-md py-12 text-center border border-zinc-700 duration-300">
             <div className="text-sm">received funding:</div>
-            <div className="text-3xl font-bold">0 ETH</div>
+            <div className="text-3xl font-bold text-secondary">0 GLM</div>
           </div>
         </div>
       </Section>
