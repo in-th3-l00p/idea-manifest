@@ -4,7 +4,7 @@ import type { NextPage } from "next";
 import { Section } from "../components/Section";
 import { FeaturedProject } from "../components/dashboard/FeaturedProject";
 import { QuickAccess, type QuickAccessItem } from "../components/dashboard/QuickAccess";
-import { BanknotesIcon, ChatBubbleLeftRightIcon, FolderIcon, LockClosedIcon, UserIcon, UsersIcon } from "@heroicons/react/20/solid";
+import { BanknotesIcon, ChartBarIcon, FolderIcon, LockClosedIcon, TagIcon, UserIcon } from "@heroicons/react/20/solid";
 
 const Home: NextPage = () => {
   return (
@@ -19,9 +19,9 @@ const Home: NextPage = () => {
           items={[
             { key: "lock", label: "lock", icon: <LockClosedIcon className="size-10 text-secondary" />, href: "/lock" },
             { key: "fund", label: "fund", icon: <BanknotesIcon className="size-10 text-secondary" />, href: "/fund" },
+            { key: "badges", label: "badges", icon: <TagIcon className="size-10 text-secondary" />, href: "/badges" },
             { key: "projects", label: "projects", icon: <FolderIcon className="size-10 text-secondary" />, href: "/projects" },
-            { key: "people", label: "people", icon: <UsersIcon className="size-10 text-secondary" />, href: "/people" },
-            { key: "chat", label: "chat", icon: <ChatBubbleLeftRightIcon className="size-10 text-secondary" />, href: "/chat" },
+            { key: "stats", label: "stats", icon: <ChartBarIcon className="size-10 text-secondary" />, href: "/stats" },
             { key: "profile", label: "profile", icon: <UserIcon className="size-10 text-secondary" />, href: "/profile" },
           ] as QuickAccessItem[]}
         />
