@@ -15,7 +15,9 @@ const ScaffoldEthApp = ({ children }: { children: React.ReactNode }) => {
       <body className="max-w-full w-full min-h-screen">
         <ThemeProvider enableSystem>
           <ScaffoldEthAppWithProviders>
-            <div className="container flex flex-col gap-12 items-center justify-center">{children}</div>
+            <div className="w-full max-w-5xl mx-auto space-y-20 pt-25 pb-20">
+              {children}
+            </div>
           </ScaffoldEthAppWithProviders>
         </ThemeProvider>
       </body>
